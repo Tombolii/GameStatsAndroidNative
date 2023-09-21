@@ -1,4 +1,4 @@
-package de.tomboli.app.modle
+package de.tomboli.app.model
 
 data class GamesGroup(
     val gamesGroupId: String,

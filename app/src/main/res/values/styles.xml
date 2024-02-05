@@ -4,4 +4,12 @@
         <item name="android:textColor">@color/light_black</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="FloatingActionButton" parent="Base.Widget.Material3.FloatingActionButton">
+        <item name="android:backgroundTint">@color/yellow_200</item>
+    </style>
+
+    <style name="GameGroupItemGameButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
 </resources>

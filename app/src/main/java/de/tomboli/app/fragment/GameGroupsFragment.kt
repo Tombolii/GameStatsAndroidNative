@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import de.tomboli.app.R
 import de.tomboli.app.databinding.GameGroupsBinding
 import de.tomboli.app.fragment.adapter.GameGroupListAdapter
@@ -31,11 +32,12 @@ class GameGroupsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = GameGroupListAdapter{
+        val adapter = GameGroupListAdapter()
+        val recyclerView = binding.gameGroupsList
+        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.adapter = adapter
 
-        }
-
-//        binding.buttonFirst.setOnClickListener {
+//        binding.gameGroupsList.setOnClickListener {
 //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
 //        }
     }
